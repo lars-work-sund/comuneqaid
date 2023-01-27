@@ -1,0 +1,37 @@
+name: COMUNEQAID
+channels:
+  - r
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - bs4
+  - lxml
+  - r-foreach 
+  - r-doparallel
+  - r-seurat
+  - bioconductor-tximport
+  - bioconductor-singlecellexperiment
+  - r-future
+  - r-tidyverse
+  - bioconductor-scater
+  - bioconductor-scran
+  - r-sctransform
+  - bioconductor-dropletutils
+  - r-matrix
+  - r-mclust
+  - r-diptest
+  - bioconductor-annotationdbi
+  - bioconductor-pcatools
+  - bioconductor-org.mm.eg.db
+  - bioconductor-org.hs.eg.db
+  - bioconductor-org.rn.eg.db
+  - bioconductor-org.mmu.eg.db
+  - bioconductor-scdblfinder
+  - r-kableextra
+  - snakemake
+  - r-devtools
+  - r-rjson
+  - salmon>=1.9.0
+  - alevin-fry>=0.8.0
+
