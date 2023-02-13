@@ -1,34 +1,34 @@
 com_id: test_run
-lib_sheet_path: scRNAseq/05_LabData/01_Experiments/I_Library_sheet
-qc_path: scRNAseq/00_QC
-bcl_path: scRNAseq/01_BCL
-fastq_path: scRNAseq/02_FASTQ
-out_path: scRNAseq/03_PipelineOut
-log_path: scRNAseq/04_Log
-config_path: scRNAseq/
+lib_sheet_path: /path/to/library_sheet_folder
+qc_path: /path/to/qc
+bcl_path: /path/to/bcl
+fastq_path: /path/to/fastq
+out_path: /path/to/pipeline_out
+log_path: /path/to/log
+config_path: /path/to/config
 seq_type: Nuclei
 workflow: 10x + HTO
 organism: Rat
 n_samples: 6
 chemistry: RNA v3.1
 scop_id: Cannot be read from library sheet v1
-salmon_index: /home/projects/ku_00016/data/resources/rattus-norvegicus/sc-ref/rat_splici/af_tutorial_splici/rnor_splici_idx
-T2G: /home/projects/ku_00016/data/resources/rattus-norvegicus/sc-ref/rat_splici/Rnor_6.0/t2g.tsv
-T3G: /home/projects/ku_00016/data/resources/rattus-norvegicus/sc-ref/rat_splici/Rnor_6.0/t2g_3col.tsv
-whitelist: /home/projects/ku_00016/data/resources//non-species-specific/whitelist/3M-february-2018.txt
+salmon_index: /path/to/rnor_splici_idx
+T2G: /path/to/t2g.tsv
+T3G: /path/to/t2g_3col.tsv
+whitelist: /path/to/3M-february-2018.txt
 pin_10x:
-  220801_A00642_0300_BHFFLHDMXY:
-  - SI-TT-B2
-  - SI-TT-D2
-  - SI-TT-C2
-  - SI-TT-E2
-  - SI-TT-F2
-  - SI-TT-G2
+  220101_A00111_0001_ABCDEFGHIJ:
+  - SI-TT-A1
+  - SI-TT-B1
+  - SI-TT-C1
+  - SI-TT-D1
+  - SI-TT-E1
+  - SI-TT-F1
 pin_hto:
-  220801_A00642_0300_BHFFLHDMXY:
-  - D706
-  - D707
-  - D708
-  - D709
-  - D710
+  220101_A00111_0001_ABCDEFGHIJ:
   - D701
+  - D702
+  - D703
+  - D704
+  - D705
+  - D706
