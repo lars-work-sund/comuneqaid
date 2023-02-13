@@ -12,7 +12,7 @@ rule fastqs:
     threads:
         40
     script:
-        'code/01_make-fastqs_lars.py'
+        'code/01_make-fastqs.py'
 
 rule quant:
     input:
@@ -24,7 +24,7 @@ rule quant:
     threads:
         40
     script:
-        'code/02_map-quant_lars.py'
+        'code/02_map-quant.py'
 
 rule update:
     input:
@@ -34,7 +34,7 @@ rule update:
     log:
         config['log_path'] + '/' + config['com_id'] + '/03_update-pool-table.log'
     script:
-        'code/03_update-pool-table_lars.R'
+        'code/03_update-pool-table.R'
 
 rule seurat:
     input:
@@ -44,7 +44,7 @@ rule seurat:
     log:
         config['log_path'] + '/' + config['com_id'] + '/04_make-seurat.log'
     script:
-        'code/04_make-seurat_lars.R'
+        'code/04_make-seurat.R'
 
 rule aggregate:
     input:
@@ -54,5 +54,5 @@ rule aggregate:
     log:
         config['log_path'] + '/' + config['com_id'] + '/05_aggregate.log'
     script:
-        'code/05_aggregate_lars.R'
+        'code/05_aggregate.R'
 
