@@ -131,11 +131,10 @@ def process_index(index, seq_names, index_type):
         fastq_folder = os.path.join(
             snakemake.config['fastq_path'],
             seq_name,
-            'fastq',
-            flowID
+            'fastq'
             )
-        files_read_1 += glob.glob(f'{fastq_folder}/*{index}*R1*.fastq.gz')
-        files_read_2 += glob.glob(f'{fastq_folder}/*{index}*R2*.fastq.gz')
+        files_read_1 += glob.glob(f'{fastq_folder}/?{flowID}/*{index}*R1*.fastq.gz')
+        files_read_2 += glob.glob(f'{fastq_folder}/?{flowID}/*{index}*R2*.fastq.gz')
                 
     if index_type == "hto":
         index_path, alevin_fry_tgmap = prepare_hto_index(index, path_quant_out)
