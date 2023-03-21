@@ -4,6 +4,7 @@ channels:
   - conda-forge
   - bioconda
   - defaults
+  - dranew
 dependencies:
   - bs4
   - lxml
@@ -34,4 +35,5 @@ dependencies:
   - r-rjson
   - salmon>=1.9.0
   - alevin-fry>=0.8.0
+  - bcl2fastq
 
